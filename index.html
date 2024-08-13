@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Strata by HTML5 UP</title>
+		<title>Aitzaz's Personal Webpage</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -25,14 +25,13 @@
 		
 		<!-- Toolbar -->
 		<nav class="toolbar">
-			<ul>
+			<button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+			<ul class="nav-links">
 				<li><a href="#two">Projects</a></li>
-				<li><a href = "#experience">Experience</a></li>
+				<li><a href="#experience">Experience</a></li>
 				<li><a href="Aitzaz_Shaikh_Resume.pdf" target="_blank">Resume</a></li>
 				<li><a href="#skills">Skills</a></li>
 				<li><a href="#three">Contact</a></li>
-				
-				
 			</ul>
 		</nav>
 
@@ -45,7 +44,7 @@
 						<header class="major">
 							<h2>WELCOME!</h2>
 						</header>
-						<p>I am a sophomore at Cornell University passionate about merging technical expertise with creative thinking to tackle complex global challenges. Enthusiastic about mathematics, physics, and computer science, I am eager to apply my skills to technology and explore opportunities in quantitative finance and actuarial science. Additionally, I am drawn to artificial intelligence, machine learning, and modeling, and I look forward to leveraging my analytical and problem-solving abilities in these dynamic fields.</br></br>I also enjoy taking part in competitive contests including math olympiads and hackathons. In my free time, I play cricket, bike, work out, and explore nature.</p>
+						<p>I am a sophomore at Cornell University passionate about merging technical expertise with creative thinking to tackle complex global challenges. Enthusiastic about mathematics, physics, and computer science, I am eager to apply my skills to technology and explore opportunities in software engineering, data science, and quantitative finance. Additionally, I am drawn to artificial intelligence, machine learning, and modeling, and I look forward to leveraging my analytical and problem-solving abilities in these dynamic fields.</br></br>I also enjoy taking part in competitive contests including math olympiads and hackathons. In my free time, I play cricket, bike, work out, and explore nature.</p>
 						
 
 						<ul class="actions">
@@ -54,71 +53,108 @@
 					</section>
 
 				<!-- Two -->
-					<section id="two">
-						<h2>PROJECTS</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Rock, Paper, Scissors<a href="https://github.com/aitzaz-web/rock_paper_scissors" target="_blank">Github Link</a></h3>
-								<p>Tradtional RPS game</p>
-								<p>Tools: JavaScript, HTML, CSS</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>ChaiOrSleep <a href="https://github.com/aitzaz-web/ChaiOrSleep" target="_blank">Github Link</a></h3>
-								<p>Informs users of how much chai they should drink based on their sleep cycles using regression analysis of past data</p>
-								<p>Tools: SwiftUI, Create ML, Core ML</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Etch-A-Sketch <a href="https://github.com/aitzaz-web/etch-a-sketch" target="_blank">Github Link</a></h3>
-								<p>A simple sketching game</p>
-								<p>Tools: JavaScript, HTML, CSS, Flexbox</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Guess The Flag <a href="https://github.com/aitzaz-web/Guess_The_Flag" target="_blank">Github Link</a></h3>
-								<p>A game asking users to guess given flags (ref: Hackingwithswift course)</p>
-								<p>Tools: SwiftUI</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Expense Tracker <a href="https://github.com/aitzaz-web/iExpense" target="_blank">Github Link</a></h3>
-								<p>An application that tracks users expenses. (Currently implementing concept of lagrange multipliers to allow users to optimise budget distribution)</p>
-								<p>Tools: SwiftUI</p>
-								
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Pantry Tracker (Incomplete)</h3>
-								<p>Tools: JavaScript, Python, HTML</p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-					</section>
+				<section id="projects">
+					<h2>PROJECTS</h2>
+					<ul class="project-list">
+						<li>
+							<strong><a href="https://github.com/kexin76/support-ai.git" target="_blank">AI Customer Support</a></strong>
+							<p>Collaborated with a 4-membered team to code an AI customer support system</p>
+							<div class="tools">
+								<span class="tool">Next.js</span>
+								<span class="tool">React</span>
+								<span class="tool">AWS</span>
+								<span class="tool">OpenAI</span>
+								<span class="tool">Pinecone</span>
+								<span class="tool">RAG</span>
 
-				<!--Experience-->
-				<section id = "experience">
-					<h2>Experience</h2>
+							</div>
+						</li>
+						<li>
+							<strong><a href="https://github.com/aitzaz-web/pantry_tracker" target="_blank">Pantry Tracker</a></strong>
+							<p>A project to manage pantry items, built with JavaScript, Python, and HTML.</p>
+							<div class="tools">
+								<span class="tool">Next.js</span>
+								<span class="tool">React</span>
+								<span class="tool">OpenAI</span>
+								<span class="tool">Firebase</span>
+								<span class="tool">Vercel</span>
+							</div>
+						</li>
+						
+						<li>
+							<strong><a href="https://github.com/aitzaz-web/ChaiOrSleep" target="_blank">ChaiOrSleep</a></strong>
+							<p>An application that informs users of how much chai they should drink based on their sleep cycles using SwiftUI, Create ML, and Core ML.</p>
+							<div class="tools">
+								<span class="tool">SwiftUI</span>
+								<span class="tool">Create ML</span>
+								<span class="tool">Core ML</span>
+							</div>
+						</li>
 
-					<div class="experience-container">
-						<!-- Experience Item 1 -->
-						<div class="experience-item">
-							<h2>Software Engineerig Fellow</h2>
-							<p class="date">July 2024 - Present</p>
-							<p class="company">Headstarter</p>
-						</div>
-			
-						<!-- Experience Item 2 -->
-						<div class="experience-item">
-							<h2>Software Developer Intern</h2>
-							<p class="date">May 2024 - Present</p>
-							<p class="company">Mage Data</p>
-						</div>
+						<li>
+							<strong><a href="https://github.com/aitzaz-web/rock_paper_scissors" target="_blank">Rock, Paper, Scissors</a></strong>
+							<p>Traditional RPS game built with JavaScript, HTML, and CSS.</p>
+							<div class="tools">
+								<span class="tool">JavaScript</span>
+								<span class="tool">HTML</span>
+								<span class="tool">CSS</span>
+							</div>
+						</li>
 
+						<li>
+							<strong><a href="https://github.com/aitzaz-web/Guess_The_Flag" target="_blank">Guess The Flag</a></strong>
+							<p>A game where users guess given flags, built with SwiftUI.</p>
+							<div class="tools">
+								<span class="tool">SwiftUI</span>
+							</div>
+						</li>
+
+						<li>
+							<strong><a href="https://github.com/aitzaz-web/iExpense" target="_blank">Expense Tracker</a></strong>
+							<p>An application that tracks users' expenses with SwiftUI. Currently implementing budget optimization concepts using Lagrange multipliers.</p>
+							<div class="tools">
+								<span class="tool">SwiftUI</span>
+							</div>
+						</li>
+
+						<li>
+							<strong><a href="https://github.com/aitzaz-web/etch-a-sketch" target="_blank">Etch-A-Sketch</a></strong>
+							<p>A simple sketching game using JavaScript, HTML, CSS, and Flexbox.</p>
+							<div class="tools">
+								<span class="tool">JavaScript</span>
+								<span class="tool">HTML</span>
+								<span class="tool">CSS</span>
+								<span class="tool">Flexbox</span>
+							</div>
+						</li>
+						
+						
+					</ul>
 				</section>
+				
+				<!--Experience-->
+				<section id="experience">
+				<h2>EXPERIENCE</h2>
+				<ul class="experience-list">
+					<li>
+						<strong>Software Developer Intern at Mage Data</strong> <span class="date">(May 2024 - Present)</span>
+						<p></p>
+					</li>
+					<li>
+						<strong>Software Engineering Fellow at Headstarter AI</strong> <span class="date">(July 2024 - August 2024)</span>
+						<p></p>
+					</li>
+					<li>
+						<strong>Software Engineering Intern at Systems Limited</strong> <span class="date">(December 2023 - January 2024)</span>
+						<p></p>
+					</li>
+					<li>
+						<strong>Date Analyst Intern at Punjab Police Research Department</strong> <span class="date">(June 2022 - August 2022)</span>
+						<p></p>
+					</li>
+				</ul>
+			</section>
+
 
 
 				<!-- Skills-->

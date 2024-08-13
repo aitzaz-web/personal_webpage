@@ -3338,43 +3338,160 @@ section {
 
 /*Experience*/
 
-#experience {
-	padding: 20px;
+.experience-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience-list li {
+    margin-bottom: 20px;
+}
+
+.experience-list strong {
+    font-weight: bold;
+}
+
+.experience-list .date {
+    font-style: italic;
+    color: #666;
+    margin-left: 10px;
+}
+
+.experience-list p {
+    margin: 5px 0;
+}
+
+.tools {
+    margin-top: 5px;
+}
+
+.tool {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 3px;
+    padding: 2px 5px; /* Reduced padding */
+    margin-right: 5px;
+    font-size: 0.8em; /* Smaller font size */
+    border: 1px solid #ddd;
+}
+
+.project-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-list li {
+    margin-bottom: 20px;
+}
+
+.project-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.project-list a:hover {
+    text-decoration: underline;
+}
+
+.project-list p {
+    margin: 5px 0;
+}
+
+.tools {
+    margin-top: 5px;
+}
+
+.tool {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 3px;
+    padding: 2px 5px; /* Reduced padding */
+    margin-right: 5px;
+    font-size: 0.8em; /* Smaller font size */
+    border: 1px solid #ddd;
+}
+
+
+/* Basic styles for the toolbar */
+.toolbar {
+    background-color: #656565;
+    color: white;
+	
+	display: flex;
+	margin-left: 35%;
+	
+	
 	
 }
 
-#experience h1 {
-	text-align: center;
-	margin-bottom: 20px;
+/* Adjust the main content to avoid overlap with the fixed toolbar */
+#main {
+    margin-top: 60px; /* Adjust this value based on the height of your toolbar */
 }
 
-.experience-container {
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 0 15px;
+    cursor: pointer;
 }
 
-.experience-item {
-	background: #fff;
-	border: 1px solid #ddd;
-	border-radius: 8px;
-	padding: 10px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
 }
 
-.experience-item h2 {
-	margin: 0;
-	font-size: 18px;
+.nav-links li {
+    margin: 0;
 }
 
-.experience-item .date {
-	font-style: italic;
-	color: #666;
-	font-size: 14px;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
 }
 
-.experience-item .company {
-	font-weight: bold;
-	color: #333;
-	font-size: 16px;
+.nav-links a:hover {
+    background-color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on your toolbar height */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid #444;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
 }
