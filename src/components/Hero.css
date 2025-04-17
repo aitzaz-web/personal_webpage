@@ -1,0 +1,68 @@
+.hero {
+  background-color: #f5f5f5;
+  padding: 40px 20px; /* was 80px, now reduced */
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.hero-container {
+  max-width: 700px; /* slightly reduced from 800px */
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem; /* smaller headline */
+  margin-bottom: 16px; /* less spacing */
+  font-weight: 700;
+}
+
+.name-highlight {
+  color: #007acc;
+}
+
+.subtitle {
+  font-size: 1.2rem; /* slightly smaller */
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5; /* tighter line height */
+  margin-bottom: 16px;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #005fa3;
+}
+
+.social-links {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.social-links a {
+  color: #007acc;
+  margin: 0 6px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}

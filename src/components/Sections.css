@@ -1,0 +1,112 @@
+/* Shared section styles */
+section {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Projects */
+.projects .project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* At 768px and up, show 2 columns */
+@media (min-width: 768px) {
+  .projects .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project-card {
+  background-color: #f4f4f4;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+.project-card h3 {
+  margin: 0;
+  color: #333;
+}
+.project-card p {
+  margin: 0.5rem 0 0 0;
+  color: #555;
+}
+
+/* Experience */
+.experience {
+  padding: 1rem 1rem;
+}
+
+.experience h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Reduced gap between items */
+}
+
+.experience-item {
+  background: #f9f9f9;
+  padding: 0.75rem; /* Reduced padding */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+}
+
+.experience-item h3 {
+  font-size: 1rem; /* Kept small for compact design */
+  color: #007acc;
+  margin-bottom: 0.25rem; /* Reduced margin */
+}
+
+.experience-item h4 {
+  font-size: 1rem; /* Reduced font size */
+  color: #555;
+  margin-bottom: 0.25rem; /* Reduced margin */
+}
+
+.experience-dates {
+  font-size: 0.85rem; /* Slightly smaller font size */
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item ul {
+  list-style-type: disc;
+  padding-left: 1.25rem; /* Reduced padding for compactness */
+  color: #333;
+}
+
+.experience-item ul li {
+  margin-bottom: 0.25rem; /* Reduced spacing between list items */
+}
+
+/* Contact */
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+.contact li {
+  margin-bottom: 0.5rem;
+}
+.contact a {
+  font-weight: 500;
+}
