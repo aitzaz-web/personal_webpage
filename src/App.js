@@ -1,9 +1,9 @@
 import "./App.css";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./Pages/Home";
+import ProjectsPage from "./Pages/Projects";
+import ExperiencePage from "./Pages/Experience";
 import { useEffect } from "react";
 
 import AOS from "aos";
@@ -18,13 +18,16 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Projects />
-      <Experience />
-      <Contact />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

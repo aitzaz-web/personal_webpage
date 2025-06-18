@@ -6,6 +6,40 @@ export default function Projects() {
       <h2>Projects</h2>
       <div className="project-list">
         <div className="project-card">
+          <h3>Writing Pilot AI <a href="https://writingpilot.ai" target="_blank" rel="noopener noreferrer" style={{marginLeft: '10px', fontSize: 'small'}}>Website</a></h3>
+          <p>
+            Collaborating with a 4-member team to build a browser extension that leverages AI to accelerate and enhance writing across the web. Writing Pilot AI provides intelligent, context-aware suggestions, adapts to your unique style, and integrates seamlessly into your browser to save time and boost productivity.
+          </p>
+          <p className="tools">Tools: AI/ML, Browser Extension, JavaScript, React.js</p>
+        </div>
+
+        <div className="project-card">
+          <h3>GPal (Smart Chrome Extension for Google Calendar)
+            <a href="https://www.youtube.com/watch?v=0gKXgGBN6tM" target="_blank" rel="noopener noreferrer" style={{marginLeft: '10px', fontSize: 'small'}}>
+              Demo
+            </a>
+            <span style={{marginLeft: '5px', fontSize: 'small'}}>| GitHub Link unavailable due to user privacy</span>
+          </h3>
+          <p>
+            Built a monetized Google Chrome extension that parses text using carefully engineered AI prompts and adds events to Google Calendar in one click, saving users 30+ seconds per event and streamlining productivity.
+          </p>
+          <p className="tools">
+            Tools: JavaScript, Node.js, Express, Chrome Extension API, Google Calendar API, OpenAI API, Stripe
+          </p>
+        </div>
+
+        <div className="project-card">
+          <h3>RapidRho</h3>
+          <p>
+            Building a full-stack ML pipeline that trains a neural network to recover latent asset correlation with 90%+ accuracy, replacing slow numerical inversion with fast, real-time prediction for pricing and risk workflows.
+          </p>
+          <p className="tools">
+            Tools: Python, PyTorch, NumPy, Pandas, Flask, Firebase, React.js
+          </p>
+          <p className="project-dates"><em>May 2025 - Present</em></p>
+        </div>
+
+        <div className="project-card">
           <h3>Cornell PSA Students & Alumni Networking Portal</h3>
           <p>
             Building a centralized web platform for 500+ Pakistani students and
@@ -68,18 +102,6 @@ export default function Projects() {
         </div>
 
         <div className="project-card">
-          <h3>Rock, Paper, Scissors</h3>
-          <p>Traditional RPS game built with JavaScript, HTML, and CSS.</p>
-          <p className="tools">Tools: JavaScript, HTML, CSS</p>
-        </div>
-
-        <div className="project-card">
-          <h3>Guess The Flag</h3>
-          <p>A game where users guess given flags, built with SwiftUI.</p>
-          <p className="tools">Tools: SwiftUI</p>
-        </div>
-
-        <div className="project-card">
           <h3>Expense Tracker</h3>
           <p>
             An application that tracks users' expenses with SwiftUI. Currently
@@ -87,14 +109,6 @@ export default function Projects() {
             multipliers.
           </p>
           <p className="tools">Tools: SwiftUI</p>
-        </div>
-
-        <div className="project-card">
-          <h3>Etch-A-Sketch</h3>
-          <p>
-            A simple sketching game using JavaScript, HTML, CSS, and Flexbox.
-          </p>
-          <p className="tools">Tools: JavaScript, HTML, CSS, Flexbox</p>
         </div>
       </div>
     </section>

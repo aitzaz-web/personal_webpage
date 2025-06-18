@@ -6,6 +6,13 @@ export default function Experience() {
       <h2>Experience</h2>
 
       <div className="experience-list">
+      <div className="experience-item">
+          <h3>ProNexus</h3>
+          <h4>Software Engineering Intern</h4>
+          <p className="experience-dates">
+            <em>Aug 2024 – Present</em>
+          </p>
+        </div>
         <div className="experience-item">
           <h3>Cornell Symbiotic Engineering and Analysis Lab</h3>
           <h4>Machine Learning Research Assistant</h4>
