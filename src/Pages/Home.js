@@ -1,4 +1,3 @@
-// Home.jsx
 import Hero from "../components/Hero";
 import "./Home.css";
 
@@ -9,16 +8,27 @@ export default function Home() {
         <div className="hero-section">
           <Hero />
         </div>
-        <div className="action-section">
-          <h3>Explore My Work</h3>
-          <p>Discover my latest projects and professional experience in software engineering and AI/ML.</p>
-          <a href="/projects" className="action-btn projects-btn">
-            View Projects
-          </a>
-          <a href="/experience" className="action-btn experience-btn">
-            View Experience
-          </a>
-        </div>
+        <aside className="action-section">
+          <p className="action-eyebrow">Explore</p>
+          <h3>Work &amp; Writing</h3>
+          <p>
+            Systems, startups, and experiments across agentic AI, HPC, and scalable infrastructure.
+          </p>
+          <div className="action-buttons">
+            <a href="/projects" className="action-btn projects-btn">
+              View Projects
+              <span className="action-btn-arrow">→</span>
+            </a>
+            <a href="/research" className="action-btn research-btn">
+              View Research
+              <span className="action-btn-arrow">→</span>
+            </a>
+            <a href="/blog" className="action-btn blog-btn">
+              View Blog
+              <span className="action-btn-arrow">→</span>
+            </a>
+          </div>
+        </aside>
       </div>
     </div>
   );

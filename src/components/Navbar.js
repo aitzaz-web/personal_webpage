@@ -1,18 +1,26 @@
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav className="navbar">
+      <NavLink to="/" className="nav-brand" end>
+        Aitzaz
+      </NavLink>
       <ul className="nav-links">
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/" end>
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <NavLink to="/projects">Projects</NavLink>
         </li>
         <li>
-          <Link to="/experience">Experience</Link>
+          <NavLink to="/research">Research</NavLink>
+        </li>
+        <li>
+          <NavLink to="/blog">Blog</NavLink>
         </li>
       </ul>
     </nav>
